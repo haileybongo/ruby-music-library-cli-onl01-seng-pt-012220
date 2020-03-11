@@ -356,7 +356,7 @@ class MusicLibraryController
     songs << song
    end
     
-    if input <= songs.length || input >= songs.length
+    if input <= songs.length && input > 0 
     song = songs[input-1]
     puts "Playing #{song.name} by #{song.artist.name}"
   end
