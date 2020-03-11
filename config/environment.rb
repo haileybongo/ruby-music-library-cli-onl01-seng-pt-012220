@@ -312,6 +312,15 @@ class MusicLibraryController
       puts "#{i}. #{genre.name}"
     end
   end
+  
+  def list_songs_by_artist
+     input = ""
+    
+    
+      puts "
+    
+      input = gets.strip 
+      
     
 end
 
