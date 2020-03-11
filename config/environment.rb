@@ -321,7 +321,12 @@ class MusicLibraryController
     
       input = gets.strip 
       
-      input.songs.sort_by
+      if artist = find_by_name(input) != nil
+        artist.songs.sort_by{|song|song.name}.each.with_index(1) do |song, i|
+      puts "#{i}. #{song.name}"
+     else 
+        
+    end
       
     
 end
