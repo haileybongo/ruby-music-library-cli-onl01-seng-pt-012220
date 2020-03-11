@@ -314,6 +314,7 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
+    
      input = ""
     
     
@@ -327,6 +328,7 @@ class MusicLibraryController
       puts "#{i}. #{song.name}"
      else
      end
+    
   
   end
       
