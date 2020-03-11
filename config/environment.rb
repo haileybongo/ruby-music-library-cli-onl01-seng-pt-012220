@@ -321,7 +321,7 @@ class MusicLibraryController
     
       input = gets.strip 
       
-      Artist.
+      input.songs.sort_by
       
     
 end
