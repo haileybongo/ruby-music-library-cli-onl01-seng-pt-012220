@@ -327,6 +327,7 @@ class MusicLibraryController
      else
      end
     end
+  end
       
     
 end
