@@ -355,10 +355,12 @@ class MusicLibraryController
     songs = []
     Song.all.sort_by{|song| song.name}.each do |song|
     songs << song
+   end
     
-    puts "Playing #{songs[input-1].name} by #{songs{input-1}.artist.name}"
+    song = songs[input-1]
+    puts "Playing #{song.name} by #{song.artist.name}"
 
-    end
+   
   end
 end
       
