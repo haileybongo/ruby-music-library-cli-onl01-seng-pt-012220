@@ -348,9 +348,10 @@ class MusicLibraryController
   end
   
   def play_song
-    list_songs 
+   
     input = ""
-    puts "Which song number would you like to play?" 
+    puts "Which song number would you like to play?"
+      list_songs
     input = gets.strip.to_i
     songs = []
     Song.all.sort_by{|song| song.name}.each do |song|
