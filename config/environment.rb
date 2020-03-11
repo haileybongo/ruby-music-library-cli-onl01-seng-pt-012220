@@ -349,7 +349,17 @@ class MusicLibraryController
   
   def play_song
     list_songs 
+    input = ""
+    puts "Which song number would you like to play?" 
+    input = gets.strip
+    songs = []
+    Song.all.sort_by{|song| song.name}.each do |song|
+    songs << song
     
+    puts "Playing #{songs[input-1].name} by #{songs{input-1}.artist.name}"
+
+    end
+  end
 end
       
 
