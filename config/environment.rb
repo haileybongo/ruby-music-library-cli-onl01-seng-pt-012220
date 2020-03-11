@@ -302,7 +302,7 @@ class MusicLibraryController
   end
   
   def list_artists
-    Song.all.sort_by{|song| song.artist.name}.each.with_index(1) do |song, i|
+    Song.all.sort_by{|song| artist.name}.each.with_index(1) do |song, i|
       puts "#{i}. #{song.artist.name}"
     end
   end
